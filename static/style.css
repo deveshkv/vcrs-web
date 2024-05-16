@@ -1,0 +1,22 @@
+body {
+    background: #d0dafc;
+    }
+    .logo {
+    text-indent: -9999px;
+    background: url("logo.png");
+    width: 680px;
+    height: 120px;
+    }
+
+
+        /* Centering the submit button */
+        .center-container {
+           text-align: left;
+            margin-top: 16px;
+            margin-left: 4cm;
+        }
+             .center-container button
+              {  padding: 20px 40px;
+                font-size: 20px;}
+
+
