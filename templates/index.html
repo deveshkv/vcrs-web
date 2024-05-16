@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div id = "divmark" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <h1 class="logo"></h1>
+</head>
+<body>
+    <h1>Mechanical Engineering Department</h1>
+    <div class="container">
+        <h2>Project Analysis</h2>
+        <form action="/analyze" method="post">
+            <label for="refrigerant">Choose a refrigerant:</label>
+            <select name="refrigerant">
+                <option value="select">select</option>
+            <!--    <option value="R717">R717</option>   -->
+                <option value="R134a">R134a</option>
+            </select>
+            <br>
+            
+            <h3 for="Enter Temperatures in Kelvin ">Enter Temperatures in Kelvin :</h3>
+            <label for="T1">Enter the value for Evaporator temperature T1 (in K):</label>
+            <input type="text" name="T1" required>
+            <br>
+            <!-- <label for="T2">Enter the value for Condenser temperature T2 (outlet):</label> -->
+            
+            <br>
+            <label for="T3">Enter the value for Condenser temperature T3 (in K):</label>
+            <input type="text" name="T3" required>
+            <br>
+          <!--   <label for="T4">Enter the value for Evaporator temperature T4 (inlet):</label> -->
+          <br>
+          <label for="m">Enter the value mass flow rate (in Kg):</label>
+          <input type="text" name="m" required>
+          <br>
+            <br>
+            <div class="center-container">
+                <input type="submit" value="Submit and Analyze">
+            </div>
+        </form>
+      
+        <h5>Here is Sample Data just for testing purposes Accuracy as compared to real data values can Differ.</h5>
+        <p>viz. T1=253K, T3=313K </p>
+        
+    </div>
+    <footer>
+        <h2>Project Guide</h2>
+        <p>Prof S.P. Kutar</p>
+        <h2>Project Team</h2>
+        <ul>
+            <li>Devesh Kumar (20519)</li>
+            <li>Sanjeev Kumar (218501)</li>
+            <li>Kirti Gupta (20530)</li>
+            <li>Shashank Dubey (218505)</li>
+        </ul>
+    </footer>
+</body>
+</html>

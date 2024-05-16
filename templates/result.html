@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div id="divmark"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <h1 class="logo"></h1>
+</head>
+<body>
+    <h1>Mechanical Engineering Department</h1>
+<!--    <div class="container">
+        <h2>Analysis Result</h2>
+        <p>Refrigerant: {{ refrigerant }}</p>
+        <p>T1: {{ T1 }} K, T3: {{ T3 }} K</p>
+          Display enthalpy values -->
+      <!--   <h2>Enthalpy Values</h2>
+       <p>h1: {{h1}} kJ/kg ,h2: {{ h2 }} kJ/kg , h3: {{ h3 }} kJ/kg, h4: {{ h4 }} kJ/kg</p> 
+        <p>Refrigeration effect (Q): {{ Q }} kW</p>
+        <p>Compressor work (W): {{ W }} kW</p>
+        <p>Actual COP: {{ cop }}</p>
+        <p>Ideal COP: {{ ideal_cop }}</p>
+    </div>-->
+    <div class="container">
+        <h2>Analysis Result</h2>
+        <p>Refrigerant: {{ refrigerant }}</p>
+        <p>T1: {{ T1 }} K, T3: {{ T3 }} K</p>
+        <h2>Enthalpy and Entropy Values</h2>
+        <p>h1: {{ h1 }} kJ/kg, h2: {{ h2 }} kJ/kg, h3: {{ h3 }} kJ/kg, h4: {{ h4 }} kJ/kg</p>
+        <p>s1: {{ s1 }} kJ/kgK, s2: {{ s2 }} kJ/kgK, s3: {{ s3 }} kJ/kgK</p>
+        <p>Refrigeration effect (Q): {{ Q }} kW</p>
+        <p>Compressor work (W): {{ W }} kW</p>
+        <p>Actual COP: {{ cop }}</p>
+        <p>Ideal COP: {{ ideal_cop }}</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <h2>Project Guide</h2>
+        <p>Prof S.P. Kutar</p>
+        <h2>Project Team</h2>
+        <ul>
+            <li>Devesh Kumar (20519)</li>
+            <li>Sanjeev Kumar (218501)</li>
+            <li>Kirti Gupta (20530)</li>
+            <li>Shashank Dubey (218505)</li>
+        </ul>
+    </footer>
+</body>
+</html>
